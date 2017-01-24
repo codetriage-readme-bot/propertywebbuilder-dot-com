@@ -4,17 +4,72 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
-
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Middleman" %></title>
-
+    <title><%= current_page.data.title || "PropertyWebBuilder" %></title>
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-
-    <%= stylesheet_link_tag :site %>
+    <%= stylesheet_link_tag :main %>
+    <!--[if lte IE 8]><script src="/javascripts/ie/html5shiv.js"></script><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="/stylesheets/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="/stylesheets/ie8.css" /><![endif]-->
     <%= javascript_include_tag :all %>
   </head>
-
-  <body class="<%= page_classes %>">
-    <%= yield %>
+  <body class="landing <%= page_classes %>">
+    <div id="page-wrapper">
+      <!-- Header -->
+      <header id="header">
+        <h1 id="logo"><a href="index.html">
+            <img class="pwb-logo" src="/images/pwb_logo_full.svg" alt="Home">
+          </a></h1>
+        <nav id="nav">
+          <ul>
+            <li style="display: none;"><a href="index.html">Home</a></li>
+            <li style="display: none;">
+              <a href="#">Layouts</a>
+              <ul>
+                <li><a href="left-sidebar.html">Left Sidebar</a></li>
+                <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                <li><a href="no-sidebar.html">No Sidebar</a></li>
+                <li>
+                  <a href="#">Submenu</a>
+                  <ul>
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                    <li><a href="#">Option 4</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="https://heroku.com/deploy?template=https://github.com/etewiah/pwb-for-heroku" class="button special">Create Your Free Website</a></li>
+          </ul>
+        </nav>
+      </header>
+      <%= yield %>
+      <!-- Footer -->
+      <footer id="footer">
+        <ul class="icons">
+          <li><a href="https://twitter.com/prptywebbuilder" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+          <li><a href="https://www.facebook.com/propertywebbuilder" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+          <li><a href="https://www.linkedin.com/company/propertywebbuilder" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+          <!-- <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+          <li><a href="https://github.com/etewiah/property_web_builder" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+          <!-- <li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li> -->
+        </ul>
+        <ul class="copyright">
+          <li>&copy; PropertyWebBuilder. All rights reserved.</li>
+          <li>Logo: <a href="https://github.com/shun-yoshida">Shun Yoshida</a></li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </footer>
+    </div>
+    <!-- Scripts -->
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/jquery.scrolly.min.js"></script>
+    <script src="/javascripts/jquery.dropotron.min.js"></script>
+    <script src="/javascripts/jquery.scrollex.min.js"></script>
+    <script src="/javascripts/skel.min.js"></script>
+    <script src="/javascripts/util.js"></script>
+    <!--[if lte IE 8]><script src="/javascripts/ie/respond.min.js"></script><![endif]-->
+    <script src="/javascripts/main.js"></script>
   </body>
 </html>
