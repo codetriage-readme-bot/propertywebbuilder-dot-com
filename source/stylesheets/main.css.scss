@@ -79,11 +79,12 @@
 	a {
 		@include vendor('transition', ('border-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out'));
 		border-bottom: dotted 1px;
-		color: _palette(accent1);
+    /*changed link color from accent1 to accent2*/
+		color: _palette(accent2);
 		text-decoration: none;
 
 		&:hover {
-			color: _palette(accent1) !important;
+			color: _palette(accent2) !important;
 			border-bottom-color: transparent;
 		}
 	}
@@ -1375,7 +1376,7 @@
 	#banner {
 		background-attachment: fixed;
 		background-color: _palette(accent2);
-		background-image: url('../../images/banner.jpg');
+		background-image: url('../../images/pwb_admin_map.png');
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.25);

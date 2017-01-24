@@ -1,4 +1,23 @@
 /*Ed additions*/
-#four{
+
+#four {
   background: #4696e5;
+}
+
+.pwb-logo {
+  height: 100%;
+  padding-left: 40px;
+}
+
+.deploy-btn {
+  img {
+    line-height: 2em;
+    height: 2em;
+    vertical-align: middle;
+  }
+}
+
+.info-container {
+  max-width: 600px;
+  text-align: left;
 }
