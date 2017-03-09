@@ -610,7 +610,8 @@
 			position: absolute;
 			left: 0;
 			top: 0;
-			background-image: url('images/overlay.png');
+      /*edd: seems to only apply to main landing image*/
+			/*background-image: url('images/overlay.png');*/
 			width: 100%;
 			height: 100%;
 			z-index: 1;
@@ -1430,17 +1431,19 @@
 			}
 
 			.image {
+        /*edd no longer circular*/
 				/*border-radius: 100%;*/
 				display: inline-block;
 				height: 18em;
 				margin-left: 3em;
 				vertical-align: middle;
-				width: 18em;
+				width: 28em;
 
 				img {
 					/*border-radius: 100%;*/
-          /*below to compensate for img pos*/
-          margin-top: -15px;
+          /*below was for when I used logo as main
+          image compensate for img pos*/
+          /*margin-top: -15px;*/
 					display: block;
 					width: 100%;
 				}
