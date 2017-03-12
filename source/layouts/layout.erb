@@ -34,7 +34,7 @@
     <!--[if lte IE 8]><script src="/javascripts/ie/html5shiv.js"></script><![endif]-->
     <!--[if lte IE 9]><link rel="stylesheet" href="/stylesheets/ie9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="/stylesheets/ie8.css" /><![endif]-->
-    <%= javascript_include_tag :all %>
+    <%# javascript_include_tag :all %>
   </head>
   <body class="landing <%= page_classes %>">
     <div id="page-wrapper">
@@ -43,7 +43,16 @@
         <h1 id="logo"><a href="index.html">
             <img class="pwb-logo" src="/images/pwb_logo_full.svg" alt="Home">
           </a></h1>
-        <nav id="nav">
+        <nav id="nav" class="contenedor_idiomas" >
+          <div class="idiomas" style="display: none;">
+            <% [].each do |language| %>
+              <li class=<%="#{'selected' if locale.to_s == language}" %>>
+                <% link_to "/#{language}", class: language do %>
+                  <span class="hide"><%= I18n.t(language) %></span>
+                <% end %>
+              </li>
+            <% end %>
+          </div>
           <ul>
             <li><a href="https://heroku.com/deploy?template=https://github.com/etewiah/pwb-for-heroku" class="button special">Create Your Free Website</a></li>
           </ul>

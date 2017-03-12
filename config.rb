@@ -18,6 +18,10 @@ page '/*.txt', layout: false
 
 # General configuration
 
+activate :i18n, :langs => [:en, :es], :mount_at_root => false
+# looks like ":mount_at_root => false" is needed for /en to work
+# - otherwise looks like only / works for "en"
+
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload

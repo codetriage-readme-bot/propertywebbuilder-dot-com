@@ -2,6 +2,7 @@
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'mods';
+@import 'idiomas';
 @import url('font-awesome.min.css');
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
 
@@ -1322,6 +1323,8 @@
 
 			ul {
 				margin: 0;
+
+        /*float: left;*/
 
 				li {
 					display: inline-block;

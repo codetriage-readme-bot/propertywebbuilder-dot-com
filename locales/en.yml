@@ -1,0 +1,70 @@
+---
+en:
+  en: English
+  es: Español
+  plans:
+    free: free
+    basic: basic
+    popular: popular
+    premier: premier
+  welcome:
+    rights_reserved: "%{company_name} All rights reserved."
+    get_in_touch: Contact Us
+    get_in_touch_prompt: We would love to hear from you.  If you have any comments or queries, please leave us a message.
+    keywords: estate agency, website, online property search, property management
+    create_my_site: CREATE MY SITE FOR FREE
+    custom_domain_html: <em>Custom domain</em>
+    email_support_html: <em>Email support</em>
+    multiple_languages_html: <em>Multiple languages</em>&nbsp; 
+
+    properties: properties
+    images: images
+    users: users
+    user: user
+    domain: domain
+    bandwidth: bandwidth
+    languages: languages
+    main_tagline: A professional real estate website in minutes
+    get_a_professional_website: A modern website is key to success
+    sign_up: Sign Up
+    smartest_way: 
+      The smartest and quickest way to create an estate agency website
+    you_dont_need_an_it_department: You don't
+      need an IT department to have an amazing real estate website!
+    easy_to_setup: Fast, Simple and Powerful
+    within_minutes: With just a few clicks, you can customise your very own fully functional website.
+    constantly_improving: Constantly improving
+    constantly_improving_details: We regularly add new features and functionalities. If there is a feature you require, just let us know and we will add it.
+     # You will not need to do anything to take advantage of the improvements.  They will be rolled out
+     #  without any interuption to you.
+    no_commitments: No commitments
+    no_upfront_costs: There are no upfront costs and you are free to cancel at anytime.
+    no_upfront_costs_more: Don't waste money upfront - only pay our low monthly few for as long as you need the website.   
+    free_for_x_months: Free for one month
+    after_three_months: After one month
+      you can choose from 3 great value plans.
+    mobile_friendly: Mobile friendly
+    mobile_friendly_more: Mobile friendly websites rank higher with Google and attract more clients 
+    learn_more: Learn More
+    get_started_now: Get started now
+    free_for_3_months: Free for 1 month
+      - you don't even have to provide payment info!!!
+    monthly: Monthly
+    yearly: Yearly
+    basic: Basic
+    mo: mo
+    custom: Custom
+    unlimited: Unlimited
+    multiple: Multiple
+    select: Select
+    yr: yr
+    # popular: Popular
+    # premier: Premier
+    # '15': '15'
+    # '100': '100'
+    # '1000': '1000'
+    # '630': '630'
+    # '30': '30'
+    # '10000': '10,000'
+    # '10': '10'
+    # '950': '950'
